@@ -1,6 +1,6 @@
 # krunker-ahnum
 
-this.ahNum = (this.ahNum + 105) & 255;  // add 105, wrap at 255
+this.ahNum = (this.ahNum + 31) & 255;  // add 31, wrap at 255
 
 const ahNumBytes = Buffer.from([                                                                                                                                                               
     (ahNum >> 4) & 0x0F,   // high nibble                                                                                                                                                        
@@ -9,6 +9,6 @@ const ahNumBytes = Buffer.from([
 
 
 
-packet 1: ahNum = 105   (0 + 105)                                                                                                                                                                
-packet 2: ahNum = 210   (105 + 105)                                                                                                                                                               
-packet 3: ahNum = 60   (210 + 105) wrapped                                                                                                                                                               
+packet 1: ahNum = 31   (0 + 31)                                                                                                                                                                
+packet 2: ahNum = 62   (31 + 31)                                                                                                                                                               
+packet 3: ahNum = 93   (62 + 31) wrapped                                                                                                                                                               
