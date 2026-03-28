@@ -11,4 +11,4 @@ const ahNumBytes = Buffer.from([
 
 packet 1: ahNum = 31   (0 + 31)                                                                                                                                                                
 packet 2: ahNum = 62   (31 + 31)                                                                                                                                                               
-packet 3: ahNum = 93   (62 + 31) wrapped                                                                                                                                                               
+packet 3: ahNum = 93   (62 + 31)                                                                                                                                                               
